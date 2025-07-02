@@ -1,0 +1,11 @@
+```mermaid
+flowchart TD
+    A[CSV Data Input] --> B[Pandas Preprocessing]
+    B --> C[Model 1: Linear Price]
+    B --> D[Model 2: Demand-Based Price]
+    B --> E[Model 3: Competitive Pricing]
+    C & D & E --> F[Price Output]
+    F --> G[Bokeh Visualization]
+    B --> H[Stream Data via Pathway]
+    H --> F
+```
